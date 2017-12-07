@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie dodatkowe HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>A Simple Form</h1>
+    </header>
+    <h3> <i>
+    <font color="grey"> Form Fundamentals</font></i></h3>
+    
+        <form action="https://formspree.io/ldamentka@gmail.com" method="POST" autocomplete="on">
+            <aside>
+                <fieldset>
+                    <legend>
+                        Customer Info
+                    </legend>
+                    <label for="name">Name: </label><br/>
+                    <input type="text" name="name" id="name" placeholder="Enter your name"  autofocus required><br/>
+
+                   <label for="tel">Telephone: </label><br/>
+                    <input type="tel" name="tel" id="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}"  required><br/>
+                    <br/>
+                    <label for="email">Email address: </label><br/>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required><br/>
+
+                </fieldset>
+            </aside>
+
+
+            <aside>
+                <fieldset>
+                    <legend>Books </legend>
+
+                    <input list="books"  name="books" required>
+                    <datalist id="books">
+                <option value="Pan Tadeusz">
+                <option value="Dziady">
+                <option value="W pusyni i w puszczy">
+                <option value="Śluby panieńskie">
+                <option value="Quo Vadis">
+            </datalist>
+                   
+                    <label for="quantity"> Quantity (Maximum 5):</label>
+                      <select id="quantity" required>
+                   <option value="">            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+                    </select>
+            <br>
+                  </fieldset></aside>
+                  <input type="submit" value="Submit">
+                  </form>
+    
+
+</body>
+
+</html>
