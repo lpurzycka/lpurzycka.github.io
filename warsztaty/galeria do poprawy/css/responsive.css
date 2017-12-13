@@ -1,37 +1,67 @@
+/*na początku trzeba zresetować px galery z 1024px na 100%*/
+
 #gallery {
     width: 100%;
 }
 
-@media all and (max-width: 480px) {
-    figure {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-
-
-@media all and (min-width: 481px)and (max-width: 768px) {
-    figure {
-        width: 75%;
-        
-    }
-}
-
-@media all and (min-width: 769px)and (max-width: 992px) {
+/*
+nadpisujemy reguły, to co niżej nadpisuje to co jest wyżej
+@media screen and (max-width: 992px) {
     figure {
         width: 40%;
-        
     }
 }
 
-
-@media all and (min-width: 993px) {
+@media screen and (max-width: 768px) {
     figure {
-        width: 30%;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    figure {
+        width: 100%;
+       }
+}
+*/
+
+
+@media screen and (max-width: 480px) {
+    figure {
+        width: 100%;
+         }
+}
+
+
+@media screen and (min-width: 481px)and (max-width: 768px) {
+    figure {
+        width: 100%;
+        }
+}
+
+@media screen and (min-width: 769px)and (max-width: 992px) {
+    figure {
+        width: 40%;
+            }
+   }
+/*
+
+@media screen and (min-width: 769px)and (max-width: 992px) {
+    figure {
+        width: 40%;
+}
+    #galllery {
+        font-size: 0;
+    }
         
     }
+}
+*/
+
+@media screen and (min-width: 993px) {
+    figure {
+        width: 33%;
+        }
 }
 
 
