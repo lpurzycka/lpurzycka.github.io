@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
 background-color: #98fb98;
 margin: 0;
@@ -12,7 +17,7 @@ padding: 0;
     top: 30%;
     margin: 0;
  }
-#zdjecia {
+.zdjecia {
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -20,6 +25,7 @@ padding: 0;
     background-position: center;
     display: inline-block;
 	margin-right: 10px;
+    position: relative;
 }
 
 .box1 {
@@ -43,6 +49,7 @@ padding: 0;
 
     width: 200px;
     height: 200px;
+    position: relative;
 }
 
 .overlay .link {
@@ -54,6 +61,7 @@ padding: 0;
     top: 0px;
     margin: 0;
     opacity: 0;
+    position: relative;
     transition: opacity 1s ease-in-out;
     }
 
