@@ -6,6 +6,8 @@
         width: 450px;
         margin: 0 auto;
         left: 10%;
+        margin-top: 20px;
+        position: static;
       
    
     }
@@ -25,6 +27,7 @@
     .container {
         width: 250px;
         top: 15%;
+        position: static;
     }
     
     #zdjecia {
