@@ -1,0 +1,112 @@
+@media all and (max-width: 1200px){
+    .portfolio-item {
+        width: 50%;
+    }
+    .portfolio-item:last-child {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 992px){
+    #main-nav > #drop:checked + ul {
+        display: block;
+    }
+    
+    
+    #main-nav .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    #main-nav > ul{
+        display: none;
+    }
+    
+    #main-nav > ul > li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    
+    
+    .main-header-content {
+        padding: 10%;
+    }
+    #about figure {
+        width: 100%;
+        
+        
+        }
+    #about > figure > img{
+        max-height: inherit;
+    }
+    
+    #about h3 {
+    width: 100%;            
+        }
+    
+    .porfolio-item {
+        width: 100%;
+        
+    }
+    
+     #contact .contact-data {
+        width: 100%;
+        text-align: center;
+    
+    }
+    #contact .contact-data h2 {
+        text-align: center;
+        
+    }
+    #contact .contact-form {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    #contact .contact-social-icons a {
+        margin: 0; 
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    }
+        
+
+
+@media all and (max-width: 768px){
+   #main-nav, #main-header, #about, #skills, #portfolio, #contact,  {
+        padding: 0 40px 50px;
+            } 
+    
+    #main-header .main-header-content h1 {
+       font-size: 3em;
+       
+}
+    #main-header .main-header-content h2 {
+        font-size: 1.5em;
+}
+    
+}
+
+
+@media all and (max-width: 576px){
+       #main-nav, #main-header, #about, #skills, #portfolio, #contact, #footer {
+            padding: 0 10px 30px;
+    }
+}
+
+
+ 
+
+
+
+
+
+
