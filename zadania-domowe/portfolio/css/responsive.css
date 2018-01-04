@@ -1,6 +1,6 @@
 @media all and (max-width: 1200px){
     .portfolio-item {
-        width: 50%;
+        width: 49%;
     }
     .portfolio-item:last-child {
         width: 100%;
@@ -36,9 +36,11 @@
     }
     
     
+/*
     .main-header-content {
         padding: 10%;
     }
+*/
     #about figure {
         width: 100%;
         
@@ -49,8 +51,10 @@
     }
     
     #about h3 {
-    width: 100%;            
+    width: 100%;  
+    text-align: center;
         }
+    
     
     .porfolio-item {
         width: 100%;
@@ -81,7 +85,7 @@
 
 
 @media all and (max-width: 768px){
-   #main-nav, #main-header, #about, #skills, #portfolio, #contact,  {
+   section  {
         padding: 0 40px 50px;
             } 
     
@@ -92,13 +96,25 @@
     #main-header .main-header-content h2 {
         font-size: 1.5em;
 }
-    
+      
+  #about  h3 {
+        text-align: center;
+    }
 }
 
 
 @media all and (max-width: 576px){
-       #main-nav, #main-header, #about, #skills, #portfolio, #contact, #footer {
-            padding: 0 10px 30px;
+    section { padding: 0 10px 30px;}
+/*
+    .main-header-content {
+        padding: 5vh;
+    }
+*/
+    #about  h3 {
+        text-align: center;
+    }
+    .portfolio-item {
+        width: 100%;
     }
 }
 
