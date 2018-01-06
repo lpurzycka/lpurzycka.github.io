@@ -1,0 +1,33 @@
+body {
+    background-color: yellow;
+}
+
+p {
+    background-color: lime;
+}
+
+span {
+    background-color: red;
+}
+
+#relatywny {
+    background-color: pink;
+    position: relative;
+    top: 40px;
+    left:100px;
+    
+/*    pozycja relatywna- ustawia sie względem pierwotnej pozycji, do pozycji relatywnej uzywany left, top, bottom itp*/
+    
+}
+#kontener{
+    position: relative;
+}
+#absolutny {
+    background-color: orange;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    
+    
+}
+
