@@ -27,16 +27,9 @@
 
 
 //function dodawanie(){
-   
- 
-    
-   
-//    return 108;    
-//    
-//}
-//
+//       return 108;    
+//   }
 //var wynik = dodawanie ();
-//
 //console.log(wynik);
 
 
@@ -51,23 +44,53 @@
 
 
 
-//
-//function dodawanie(arr) {
-//    var suma = 0;
-//    for (var i=0; i<arr.length; ++i) {       
-////       console.log(i); 
-//        
-//        suma = suma +arr[i];
-////        suma += arr[i];
-////        console.log(suma);
-//    }
-//    return suma;
-//}
-//var tablica = [5, 35, 67, 86, 93, 76, 37, 53, 78, 45];
-//
-//var wynik = dodawanie (tablica);
-//
-//console.log(wynik);
+
+
+
+
+
+
+
+function dodawanie(arr) {
+    var suma = 0;
+    for (var i=0; i<arr.length; ++i) { 
+        
+//        sprawdzamy czy funckcja for przejdzie po wszystkich indexach
+       console.log(i); 
+        
+        suma = suma +arr[i];
+//        suma += arr[i];
+        
+//        pokaże nam wszystkie sumy z przejścia po wszystkich indexach, po funkcji for 
+//        console.log(suma);
+    }
+    return suma;
+}
+var tablica = [5, 35, 67, 86, 93, 76, 37, 53, 78, 45];
+
+var wynik = dodawanie (tablica);
+
+console.log(wynik);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

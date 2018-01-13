@@ -5,8 +5,6 @@
 //funkcja ma policzyć i zwrócić czas naszej podrozy
 //wynik wyswietl w konsoli w postawci "Dystans pokonasz w 4h"
 
-
-
 //czas= dystans/predkosc
 //t=s/v
 
@@ -29,7 +27,7 @@ function czasPodrozy(s,v) {
         //sprawdzamy czy predkość jest wieksza od 0, jeżeli mniejsza, to wywoła błąd
     }
   var czas = s /v;
-    console.log("Jestem tutaj");
+//    console.log("Jestem tutaj");
     return czas;
     
     //return konczy działanie kodu
