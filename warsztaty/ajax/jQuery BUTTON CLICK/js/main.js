@@ -15,12 +15,12 @@ $(function () {
                 console.log(pobierzDane);
 
 
-//$("body").add("p").append(pobierzDane.userId +", " + pobierzDane.userName +", " + pobierzDane.userURL );
+$("body").add("p").append(pobierzDane.userId +", " + pobierzDane.userName +", " + pobierzDane.userURL );
         
-        $("body").add("p").append(pobierzDane.userId);
-        $("body").add("p").append(pobierzDane.userName);
-            $("body").add("p").append( pobierzDane.userURL );
-        
+//        $("body").add("p").append(pobierzDane.userId);
+//        $("body").add("p").append(pobierzDane.userName);
+//            $("body").add("p").append( pobierzDane.userURL);
+//        
         });
     });
 
