@@ -18,9 +18,12 @@ function ajax(method, url) {
                     
                 var stworzonyDiv = document.createElement("div");
                 stworzonyDiv.id = "dane-programisty";
+                
                 var tekstDiva = document.createTextNode(myObj.imie + " , " + myObj.nazwisko + " , " + myObj.zawod + " , " + myObj.firma);
                 stworzonyDiv.appendChild(tekstDiva);
                 document.body.appendChild(stworzonyDiv);
+//                aby umieścić diva pod buttonem:
+                stworzonyDiv.parentNode.insertBefore(stworzonyDiv, document.getElementById("przycisk").nextSibling);
 }
 
             xhttp = null;
