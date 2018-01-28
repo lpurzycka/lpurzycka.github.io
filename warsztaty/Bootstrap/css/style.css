@@ -1,6 +1,10 @@
+
 * {
     box-sizing: border-box;
 }
+
+
+
 
 body {
     margin: 0;
@@ -35,19 +39,27 @@ body {
 }
 #main-nav .nav-item a:hover{
     color: #0ed8d6;
+   
 }
 
-/*
 #main-nav.scroll .nav-item a:hover {
     color: #777;
+     
 }
-*/
+
+#main-nav.scroll{
+    background-color: #0ed8d6;
+    opacity: 0.7;
+}
+
+
 
 #main-nav a.navbar-brand {
     font-style: italic; 
     font-size: 2rem;
  }
 /*nawigacja end*/
+
 /*header start*/
 
 #main-header {
@@ -63,10 +75,10 @@ body {
 
 
 #main-header .main-header-content {
-    position: absolute;
+  position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 50%; 
 }
 
 #main-header .main-header-content h2 {
@@ -104,26 +116,30 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.8;
-    background-color: black;
+    background-color: rgba(0,0,0, 0.5);
 }
 
 
 /*sekcja services start*/
-    
+#services {
+    margin-bottom: 150px;
+}
+
 #services .main-header-services {
     color: #333;
     font-weight: bold;
     padding: 5px;
     margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
-}
+    }
 
 #services .p-header-services {
     font-style: italic;
     font-family: 'Droid Serif', sans-serif;
     margin-bottom: 70px;
 }
+
+
 
 #services .container-services .circle {
     background-color: #0ed8d6;
@@ -132,13 +148,11 @@ body {
     width: 80px;
 	height: 80px;
     color: white;
-    transition: all 0.1s;
+    transition: all 0.3s;
     position: relative;
 	margin: 6px auto;
     text-align: center;
-    
-    
-}
+ }
 
 #services .container-services .fa {
     position: absolute;
@@ -146,30 +160,433 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
+    transition: all 0.3s;
  }
 
 #services .container-services .circle:hover {
       background-color:  white;
       color: #0ed8d6;
+        transform: rotate(360deg);
 }
 
 
 #services .container-services .circle:hover .fa {
       background-color:  white;
       color: #0ed8d6;
+   
 }
+.services-title {
+    color:#333333;
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: bold;
+}
+.services-text {
+    color:#777;
+    font-family:'Roboto Slab', sans-serif;
+   font-size: 15px;
+}
+
 
 /*transform rotate*/
 
-
-
-
-
-
-
-
+#services .container-services .services-title {
+    font-weight: bold;
+    color:#333333;
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 20px;
+    font-size: 20px;
+   
+}
 
 /*sekcja services end*/
 
 
+
+
+/*sekcja portfolio start*/
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top:  50px;
+    padding-bottom: 100px;
+    
+}
+#portfolio .main-header-portfolio {
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+
+#portfolio .p-header-portfolio {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+    margin-bottom: 70px;
+     } 
+
+
+
+
+#portfolio-item-1 {
+        background-image: url(../img/portfolio/chestnut_on_bracket.jpg);  
+}    
+#portfolio-item-2 {
+        background-image: url(../img/portfolio/typing_on_laptop.jpg);
+    }
+
+#portfolio-item-3 {
+        background-image: url(../img/portfolio/child_with_blue_paint.jpg);    
+        
+}
+#portfolio-item-4 {
+        background-image: url(../img/portfolio/chaotic_paint.jpg);      
+}
+
+#portfolio-item-5 {
+        background-image: url(../img/portfolio/house_with_blue_doors.jpg);        
+}
+
+#portfolio-item-6 {
+        background-image: url(../img/portfolio/box_of_cookies.jpg);       
+}
+
+.portfolio-item {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+/*    display: inline-block;*/
+/*    width: 50%;*/
+    position: relative;
+/*    margin-bottom: 100px;*/
+/*    overflow: hidden;*/
+}
+
+    .title-container {
+    background-color: white;
+    height: 110px;
+    padding-top: 20px; 
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    
+} 
+
+.portfolio-title {
+    font-weight: bold;
+    margin: 5px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+
+
+.portfolio-title2 {
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.portfolio-mask {
+    background-color: rgba(14,216,214,0);
+/*    opacity:0;*/
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.portfolio-mask:hover {
+    background-color: rgba(14,216,214,0.5);
+    transform: scale(1.4);
+}
+.portfolio-mask .fa{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+}
+.portfolio-mask:hover .fa{
+    color:white;
+    opacity: 0.9;
+}
+/*sekcja portfolio end*/
+
+
+/*sekcja meet our team start*/
+
+#team {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top:  100px;
+    padding-bottom: 100px;
+    }
+
+#team .main-team {
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+#team .p-team {
+  font-style: italic;
+  font-family: 'Droid Serif', sans-serif;
+  margin-bottom: 100px;
+}
+
+
+#team-item-1 {  
+    background-image: url(../img/team/man-1.jpg); 
+}
+
+#team-item-2 {  
+    background-image: url(../img/team/man-2.jpg); 
+}
+#team-item-3 {  
+    background-image: url(../img/team/woman-1.jpg); 
+}
+
+.team-item{
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 100%;
+    width: 200px;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.team-title {
+   font-weight: bold;
+    margin: 5px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.team-title2 {
+    color: #777;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15px;
+}
+
+.team-circle{
+    background-color: #222222;
+    border-radius: 100%;
+    width: 50px;
+	height: 50px;
+    color: white;
+/*    transition: all 0.3s;*/
+    position: relative;
+	margin: 6px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.team-circle .fa {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.team-circle:hover {
+    background-color:#0ed8d6;
+   
+}
+      
+
+.team-circle:hover .fa {
+    background-color:#0ed8d6;
+        color:white;
+}
+
+.team-last-p  {
+    color: #777;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    line-height: 30px;
+}
+
+/*sekcja meet out team end*/
+
+
+/*sekcja contact start*/
+
+
+#contact {
+    background-image: url(../img/footer/world-map.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    color: white;
+/*    padding-bottom: 20px;*/
+}
+
+
+.contact-container{
+    margin-top: 40px;
+    padding-top: 80px;
+ }
+ 
+
+
+#contact .contact-mask {
+/*    position: absolute;*/
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+#contact .contact-header {
+   font-weight: bold;
+    margin: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 10px;
+ }
+
+#contact .p-contact {
+   font-style: italic;
+  font-family: 'Droid Serif', sans-serif;
+
+}
+
+
+.container-contact {
+  margin-top: 50px;
+    
+}
+
+.form-control {
+    margin-top: 20px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 15px;  
+    padding: 20px;
+
+}
+
+.form-control::-webkit-input-placeholder { color: darkgray;  }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: darkgray; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: darkgray; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: darkgray; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: darkgray; }
+
+
+#exampleFormControlTextarea1 {
+    height: 220px;
+ 
+}
+
+
+.submit-contact{
+   background-color: #0ed8d6;
+    border: 1px solid;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 60px;
+    transition:  all .3s; 
+    margin-top: 20px;
+   }
+
+.submit-contact:hover {
+     background-color: white;
+     color:#0ed8d6;
+}
+    
+
+/*sekcja contact end*/
+    
+/*    footer start*/
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15x;
+    margin-top: 20px;
+    color: #333;
+
+
+}
+
+.footer-terms {
+    font-weight: bold;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 15px;
+    color: #333;
+
+}
+
+.footer-p {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.footer-circle {
+    background-color: #222;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: all 0.3s;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block;
+    margin-right: 5px;
+
+
+}
+
+.footer-circle .fa {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.footer-circle:hover {
+    background-color: #0ed8d6;
+
+}
+
+
+footer-circle:hover .fa {
+    background-color: #0ed8d6;
+    color: white;
+}
+    
+/*    footer end*/
