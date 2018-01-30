@@ -1,10 +1,6 @@
-
 * {
     box-sizing: border-box;
 }
-
-
-
 
 body {
     margin: 0;
@@ -131,7 +127,7 @@ body {
     padding: 5px;
     margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
-    }
+}
 
 #services .p-header-services {
     font-style: italic;
@@ -173,7 +169,6 @@ body {
 #services .container-services .circle:hover .fa {
       background-color:  white;
       color: #0ed8d6;
-   
 }
 .services-title {
     color:#333333;
@@ -195,7 +190,6 @@ body {
     font-family: 'Montserrat', sans-serif; 
     margin-top: 20px;
     font-size: 20px;
-   
 }
 
 /*sekcja services end*/
@@ -210,7 +204,6 @@ body {
     background-color: #f7f7f7;
     padding-top:  50px;
     padding-bottom: 100px;
-    
 }
 #portfolio .main-header-portfolio {
     color: #333;
@@ -226,7 +219,7 @@ body {
     font-style: italic;
     font-family: 'Droid Serif', sans-serif;
     margin-bottom: 70px;
-     } 
+} 
 
 
 
@@ -236,7 +229,7 @@ body {
 }    
 #portfolio-item-2 {
         background-image: url(../img/portfolio/typing_on_laptop.jpg);
-    }
+}
 
 #portfolio-item-3 {
         background-image: url(../img/portfolio/child_with_blue_paint.jpg);    
@@ -280,7 +273,6 @@ body {
     margin: 5px;
     color: #333333;
     font-family: 'Montserrat', sans-serif; 
-    
 }
 
 
@@ -407,13 +399,12 @@ body {
 
 .team-circle:hover {
     background-color:#0ed8d6;
-   
-}
+ }
       
 
 .team-circle:hover .fa {
     background-color:#0ed8d6;
-        color:white;
+    color:white;
 }
 
 .team-last-p  {
@@ -456,7 +447,6 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
 }
 
 
@@ -471,14 +461,12 @@ body {
 #contact .p-contact {
    font-style: italic;
   font-family: 'Droid Serif', sans-serif;
-
 }
 
 
 .container-contact {
   margin-top: 50px;
-    
-}
+ }
 
 .form-control {
     margin-top: 20px;
@@ -486,7 +474,6 @@ body {
     font-family: 'Montserrat', sans-serif; 
     font-size: 15px;  
     padding: 20px;
-
 }
 
 .form-control::-webkit-input-placeholder { color: darkgray;  }  /* WebKit, Blink, Edge */
