@@ -155,12 +155,10 @@ span {
 
 #portfolio {
     width: 100%;
-    height: 100%;   
-  }
+    height: 100%;  
+   }
 
-.container-portfolio {
-    font-size: 0;
-}
+
 
 #portfolio .main-header-portfolio{
     margin-bottom: 30px;
@@ -180,6 +178,7 @@ span {
 
 .portfolio-item {
     height: 350px;
+/*    width: 500px;*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -189,12 +188,18 @@ span {
     padding: 0;    
 }
 
-#portfolio .container-portfolio .portfolio-item:hover{
+
+.portfolio-items{
+    font-size: 0;
+   padding: 0;
+ }
+
+#portfolio .container-portfolio .portfolio-items .portfolio-item:hover{
     transform: scale(1.3);
     z-index: 10;
 }
 
-#portfolio .container-portfolio .portfolio-item .item-mask {
+#portfolio .container-portfolio .portfolio-items .portfolio-item .item-mask {
 /*    background-color: rgba(42, 61, 79, 0.8);*/
     background: linear-gradient(to bottom right, #291f1a 0%, white 100%);
     width: 100%;
@@ -205,12 +210,12 @@ span {
     font-size: initial;
 }
 
-#portfolio .container-portfolio .portfolio-item .item-mask:hover {
+#portfolio .container-portfolio .portfolio-items .portfolio-item .item-mask:hover {
     opacity: 1;
 
 }
 
-#portfolio .container-portfolio .portfolio-item .item-mask .item-content {
+#portfolio .container-portfolio .portfolio-items .portfolio-item .item-mask .item-content {
     height: 330px;
     border: 1px solid #fff;
     margin: 10px;
@@ -218,7 +223,7 @@ span {
     text-align: center;
 }
 
-#portfolio .container-portfolio .portfolio-item .item-mask .item-content .item-content-inner {
+#portfolio .container-portfolio  .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner {
     color: #fff;
     position: absolute;
     top: 50%;
@@ -228,13 +233,13 @@ span {
     padding: 5px;
 }
 
-#portfolio .container-portfolio .portfolio-item .item-mask .item-content .item-content-inner .project-link i{
+#portfolio .container-portfolio  .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner .project-link i{
     color: #fff;
 
 }
 
 
-#portfolio .container-portfolio .portfolio-item .item-mask .item-content .item-content-inner .project-link .fa:hover {
+#portfolio .container-portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner .project-link .fa:hover {
     color: #1ac056;
 }
 
@@ -301,7 +306,7 @@ span {
 
 }
 
-input[type="text"], input[type="email"], input[type="phone"], #exampleFormControlTextarea1 {
+input[type="text"], input[type="email"], input[type="tel"], #exampleFormControlTextarea1 {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
@@ -310,7 +315,7 @@ input[type="text"], input[type="email"], input[type="phone"], #exampleFormContro
 }
 
 
-input[type="text"]:focus, input[type="email"]:focus,input[type="phone"]:focus, #exampleFormControlTextarea1:focus {
+input[type="text"]:focus, input[type="email"]:focus,input[type="tel"]:focus, #exampleFormControlTextarea1:focus {
     background-color: #426684;
 }
 
