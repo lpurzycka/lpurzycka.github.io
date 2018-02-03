@@ -1,0 +1,152 @@
+@import 'zmienne';
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#main-header {
+    background-image: url('../img/background.png');
+    min-height: 100vh;
+    background-size: cover;
+
+    .container-header {
+        padding: $padding;
+        .row {
+            .finanse {
+                i {
+                    color: $zolty;
+                }
+                span {
+                    color: $bialy;
+                    font-weight: bold;
+                    font-family: $font-family;
+                    font-size: 25px;
+                }
+            }
+            .telefon {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 20px;
+                font-family: $font-family;
+                i {
+                    color: $bialy;
+                }
+                span,
+                a {
+                    color: $bialy;
+
+                }
+            }
+        }
+        .formularz {
+            margin-top: 100px;
+            padding-left: 120px;
+
+            p {
+                color: $bialy;
+                font-size: 25px;
+                font-weight: bold;
+                span {
+                    color: $zolty;
+                }
+            }
+            .container-formularz {
+                background-color: $niebiesko-granatowy;
+                padding: 15px;
+                width: 370px;
+                font-family: $font-family;
+
+
+                .p-formularz {
+                    color: $bialy;
+                    font-size: 20px;
+                }
+
+                .form-control {
+                    margin-top: 10px;
+                }
+                #exampleFormControlTextarea1 {
+                    margin-bottom: 10px;
+                }
+                .submit-contact {
+                    background-color: $zolty;
+                    color: $szary;
+                    font-weight: bold;
+                    width: 100px;
+                    height: 60px;
+
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    background-color: $szary;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    .container-footer {
+        .row {
+            .kontakt{
+                .ramka {
+ 
+                        i {
+                            color: $niebiesko-granatowy;
+                            display: inline-block;
+                            background-color: $zolty;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            transition: all 0.5s;
+                            
+                        }
+
+                        & i:hover {
+                            border: 1px solid $zolty;
+                            color: $zolty;
+                            background: linear-gradient(to top left, $niebiesko-granatowy 10%, $bialy 102%);
+                            transform: rotate(360deg);   
+                    }
+                    }
+                a{
+                    color: $bialy;
+                }
+            }
+            .kontakt2{
+                .ramka{
+                    i{
+                    color: $niebiesko-granatowy;
+                            display: inline-block;
+                            background-color: $zolty;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            transition: all 0.5s;
+                            
+                        }
+
+                        & i:hover {
+                      border: 1px solid $zolty;
+                            color: $zolty;
+                            background: linear-gradient(to top left, $niebiesko-granatowy 10%, $bialy 102%);
+                            transform: rotate(360deg);  
+                    }
+                    }
+                a{
+                    color: $bialy;
+                }
+            } 
+        }
+        .p-footer {
+            color: $bialy;
+            padding-top: 30px;
+        }  
+    }
+} 
+    
