@@ -1,13 +1,15 @@
 @import 'zmienne';
-//@mixin style($color,$font-size){
-//    color: $color;
-//    font-size:$base-font-size;
-//}
+
 
 body {
     margin: 0;
     padding: 0;
 }
+
+//@mixin style($color,$font-size){
+//    color: $color;
+//    font-size:$base-font-size;
+//}
 
 
 #main-header {
@@ -50,7 +52,7 @@ body {
             padding-left: 120px;
 
             p {
-//                @include style($bialy, 50px;)
+//                @include style(red, 50px;)
                 color: $bialy;
                 font-size: 25px;
                 font-weight: bold;
