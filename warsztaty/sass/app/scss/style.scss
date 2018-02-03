@@ -1,5 +1,8 @@
 @import 'zmienne';
-
+//@mixin style($color,$font-size){
+//    color: $color;
+//    font-size:$base-font-size;
+//}
 
 body {
     margin: 0;
@@ -17,7 +20,7 @@ body {
         .row {
             .finanse {
                 i {
-                    color: $zolty;
+                    color: $bialy;
                 }
                 span {
                     color: $bialy;
@@ -47,6 +50,7 @@ body {
             padding-left: 120px;
 
             p {
+//                @include style($bialy, 50px;)
                 color: $bialy;
                 font-size: 25px;
                 font-weight: bold;
