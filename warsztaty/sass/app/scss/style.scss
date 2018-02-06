@@ -1,16 +1,10 @@
 @import 'zmienne';
-
+@import 'zmienne2';
 
 body {
     margin: 0;
-    padding: 0;
+    @include padding(0);
 }
-
-//@mixin style($color,$font-size){
-//    color: $color;
-//    font-size:$base-font-size;
-//}
-
 
 #main-header {
     background-image: url('../img/background.png');
@@ -18,7 +12,8 @@ body {
     background-size: cover;
 
     .container-header {
-        padding: $padding;
+        @include padding(20px);
+//        padding: 20px;
         .row {
             .finanse {
                 i {
@@ -52,9 +47,8 @@ body {
             padding-left: 120px;
 
             p {
-//                @include style(red, 50px;)
                 color: $bialy;
-                font-size: 25px;
+                font-size: $base-font-size;
                 font-weight: bold;
                 span {
                     color: $zolty;
@@ -62,7 +56,7 @@ body {
             }
             .container-formularz {
                 background-color: $niebiesko-granatowy;
-                padding: 15px;
+                @include padding(15px);
                 width: 370px;
                 font-family: $font-family;
 
@@ -138,7 +132,7 @@ body {
                         }
 
                         & i:hover {
-                      border: 1px solid $zolty;
+                            border: 1px solid $zolty;
                             color: $zolty;
                             background: linear-gradient(to top left, $niebiesko-granatowy 10%, $bialy 102%);
                             transform: rotate(360deg);  
