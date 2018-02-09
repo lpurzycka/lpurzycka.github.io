@@ -1,0 +1,112 @@
+* {
+    font-family: sans-serif;
+}
+
+#prostokat {
+      width: 600px;
+      height: 500px;
+      background-color: black;
+      position: relative;
+      border: 10px solid silver;
+      margin:0 auto;
+      top: 50px;
+      
+  }
+
+.odliczanie {
+  box-sizing: border-box;
+  color: white;
+  opacity: 0;
+  font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: animacja;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-timing-function: ease-out;
+  }
+
+
+
+.liczba10 {
+  animation-delay: 1s;
+}
+
+.liczba9 {
+  animation-delay: 2s;
+}
+
+.liczba8 {
+  animation-delay: 3s;
+}
+
+.liczba7 {
+  animation-delay: 4s;
+}
+
+.liczba6 {
+  animation-delay: 5s;
+}
+
+.liczba5 {
+  animation-delay: 6s;
+}
+
+.liczba4 {
+  animation-delay: 7s;
+}
+
+.liczba3 {
+  animation-delay: 8s;
+}
+
+.liczba2 {
+  animation-delay: 9s;
+}
+
+.liczba1 {
+  animation-delay: 10s;
+}
+
+
+.zdjecie {
+    animation-delay: 11s;
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+  background-image: url("http://img1.stylowi.pl//images/items/o/201312/stylowi_pl_inne_16455120.gif");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    
+    
+   
+    
+    
+}
+.napis {
+    animation-delay: 14s;
+    color:red;
+    font-size: 60px;
+}
+
+
+
+
+
+
+@keyframes animacja {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }  
+  100% {
+    opacity: 0;
+  }
+}
+
