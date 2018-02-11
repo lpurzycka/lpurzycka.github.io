@@ -1,0 +1,12 @@
+@mixin padding ($padding){
+    padding: $padding;
+  }
+
+
+@mixin font-size ($font-size){
+    font-size: $font-size;
+}
+
+//@mixin transition ($element, $time, $option){
+//    
+//}
