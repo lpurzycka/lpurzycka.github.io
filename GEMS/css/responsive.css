@@ -1,0 +1,257 @@
+@media screen and (max-width: 1200px) {
+    .words {
+        top: 20%;
+    }
+    .words h1 {
+        font-size: 50px;
+        text-align: right;
+    }
+
+    .words .underline {
+        width: 75%;
+        margin-left: 25%;
+    }
+    .words h2 {
+        text-align: justify;
+        font-size: 21px;
+    }
+    .words p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #slide .down {
+        bottom: 30px;
+    }
+
+    @keyframes resize-down {
+        0% {
+            bottom: 20%;
+        }
+        100% {
+            bottom: 5%;
+        }
+    }
+
+    #slide .left {
+        left: 100px;
+    }
+
+    @keyframes resize {
+        0% {
+            left: 25%;
+        }
+        100% {
+            left: 10%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .words {
+        width: 50%;
+        position: absolute;
+        top: 20%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .words h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .words .underline {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .words h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    #slide .down {
+        bottom: 30px;
+    }
+    @keyframes resize-down {
+        0% {
+            bottom: 20%;
+        }
+        100% {
+            bottom: 5%;
+        }
+    }
+    #slide .left {
+        left: 100px;
+    }
+    @keyframes resize {
+        0% {
+            left: 25%;
+        }
+        100% {
+            left: 12%;
+        }
+    }
+    #languages .eng {
+        right: 120px;
+        transition: all 0.3s ease-in-out;
+    }
+    #languages .eng:hover {
+        transform: scale(2);
+        color: #fe6a22;
+    }
+
+    #languages .pl {
+        transition: all 0.3s ease-in-out;
+    }
+
+    #languages .pl:hover {
+        transform: scale(2);
+        color: #fe6a22;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-header .frame {
+        border-width: 15px;
+    }
+    .words {
+        width: 50%;
+        position: absolute;
+        top: 20%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .words h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .words .underline {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .words h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    #slide .down {
+        bottom: 30px;
+    }
+    @keyframes resize-down {
+        0% {
+            bottom: 12%;
+        }
+        100% {
+            bottom: 5%;
+        }
+    }
+    #slide .left {
+        left: 100px;
+    }
+    @keyframes resize {
+        0% {
+            left: 25%;
+        }
+        100% {
+            left: 15%;
+        }
+    }
+    #languages .eng {
+        right: 100px;
+        transition: all 0.3s ease-in-out;
+    }
+    #languages .eng:hover {
+        transform: rotate(360deg);
+    }
+    #languages .pl {
+        right: 70px;
+        transition: all 0.3s ease-in-out;
+    }
+    #languages .pl:hover {
+        transform: rotate(-360deg);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #main-header .frame {
+        border-width: 10px;
+    }
+    #inside {
+        width: 100%;
+    }
+    .bike {
+        height: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .words {
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .words h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .words .underline {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .words h2 {
+        font-size: 20px;
+        text-align: center;
+        top: 30%;
+    }
+    .words p {
+        font-size: 10px;
+        text-align: center;
+    }
+    #slide .down {
+        bottom: 30px;
+    }
+    @keyframes resize-down {
+        0% {
+            bottom: 12%;
+        }
+        100% {
+            bottom: 5%;
+        }
+    }
+    #slide .left {
+        top: 200px;
+        left: 60px;
+    }
+    @keyframes resize {
+        0% {
+            left: 20%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    #main-nav {
+        left: 60px;
+        top: 100px;
+    }
+    #languages .eng {
+        font-size: 25px;
+        right: 40px;
+        top: 100px;
+    }
+    #languages .pl {
+        font-size: 25px;
+        right: 50px;
+        top: 200px;
+    }
+}

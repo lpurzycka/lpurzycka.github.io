@@ -1,0 +1,227 @@
+/***** general styles start *****/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/***** general styles end *****/
+
+/***** header start *****/
+
+#main-header {
+    background-image: url('../img/background.jpg');
+    background-position: center top;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main-header .frame {
+    border-width: 20px;
+    border-color: #01bfa6;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#main-header .mask {
+    height: 100%;
+    width: 100%;
+    background-color: #0a2f38;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+#main-nav i {
+    transition: all 0.3s ease-in-out;
+}
+
+#main-nav i:hover {
+    transform: scale(1.6);
+    color: #fe6a22;
+}
+
+#main-nav {
+    top: 40px;
+    left: 50px;
+    position: absolute;
+    z-index: 99;
+    color: #01bfa6;
+}
+
+
+/***** header end *****/
+
+/***** section inside start *****/
+
+#inside {
+    width: 100%;
+}
+
+.bike {
+    position: absolute;
+    width: 50%;
+    background-image: url('../img/bike.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.words {
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 19%;
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+}
+
+.words h1 {
+    color: #02d4b4;
+    font-size: 64px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+.words h1:hover {
+    color: #fe6a22;
+}
+
+.words .underline {
+    background-color: #02d4b4;
+    top: 100px;
+    width: 85%;
+    margin-left: 15%;
+    height: 2px;
+    text-align: left;
+}
+
+.words h2 {
+    color: #fe6a22;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.words h2:hover {
+    color: #02d4b4;
+}
+
+.words p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    line-height: 2.5;
+    text-align: justify;
+}
+
+/***** section inside end *****/
+
+/***** section slide start *****/
+
+#slide .left {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: 999;
+    color: #01bfa6;
+}
+
+@keyframes resize {
+    0% {
+        left: 30%;
+    }
+    100% {
+        left: 8%;
+    }
+}
+
+#slide .left:hover {
+    color: #fe6a22;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+#slide .down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    color: #01bfa6;
+    z-index: 999;
+    transform: translateX(-50%);
+}
+
+#slide .down:hover {
+    color: #fe6a22;
+    animation-name: resize-down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes resize-down {
+    0% {
+        bottom: 30%;
+    }
+    100% {
+        bottom: 8%;
+    }
+}
+
+/***** section slide end *****/
+
+/***** section languages start *****/
+
+#languages .eng {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    color: #01bfa6;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#languages .eng:hover {
+    transform: rotate(360deg);
+}
+
+
+#languages .pl {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    color: #01bfa6;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+#languages .pl:hover {
+    transform: rotate(-360deg);
+
+}
+
+/***** section languages end *****/
